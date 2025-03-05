@@ -1,0 +1,87 @@
+@media (min-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 20px;
+        background-color: #014371;
+    }
+
+    #menu-toggle{
+        display: none;
+    }
+
+    nav ul{
+        list-style: none;
+        display: flex;
+        gap: 10px; /* Spacing between links */
+        margin: 0;
+        padding: 0;
+        border: 1px solid white; /* Add border to match the table-like layout */
+        border-radius: 4px;
+        padding: 8px;
+    }
+
+    nav ul li {
+        padding: 8px 12px;
+        border-right: 1px solid white; /* Add vertical separator between links */
+    }
+    
+    nav ul li:last-child {
+        border-right: none; /* Remove separator for the last link */
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white; /* White text */
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+        background-color: #005fa3; /* Darker blue on hover */
+    }
+    
+    nav ul li a.active {
+        background-color: #136217; /* Green for active link */
+    }
+    main {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .certificate {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    #filter-buttons {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    
+    #course-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    .course-button {
+        background-color: #014371;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .course-button.completed {
+        background-color: #4caf50; /* Green for completed courses */
+    }
+
+    
+}
+

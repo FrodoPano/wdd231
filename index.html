@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page develop">
+    <meta name="author" content="Frodo Pano" >
+    <!-- Connections with the other files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>    
+    <title>WDD 231 | Home</title>
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <img src="images/profile.jpg" alt="Profile Picture">
+            <h1>Frodo Pano</h1>
+        </div>
+        
+        <nav>
+            <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <ul id="nav-menu">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">GitHub Profile</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <section class="content">
+            <div class="card">
+                <h3>Course Work</h3>
+                <ul>
+                    <li>Course Home Page</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Bermejillo, Durango</h3>
+                <img src="images/hotel.jpg" alt="Hotel Durango Express">
+                <p>Hotel Durango Express</p>
+            </div>
+        </section>
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div id="filter-buttons">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="course-list"></div>
+            <p>Total Credits: <span id="total-credits">0</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyright-year"></span> Frodo Pano, México</p>
+        <p>Last Update: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
