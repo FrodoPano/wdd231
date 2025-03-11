@@ -1,0 +1,19 @@
+#directory {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.business-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.business-card h3 {
+    margin: 0;
+}
+
+.business-card p {
+    margin: 5px 0;
+}
