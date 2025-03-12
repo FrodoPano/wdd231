@@ -1,65 +1,65 @@
 [
     {
-        "name": "Business Name 1",
-        "address": "123 Main St, Bermejillo, Durango",
-        "phone": "800-555-1234",
+        "name": "Hotel Durango Express",
+        "address": "Insurgentes 18, Bermejillo, Durango",
+        "phone": "(871) 357-9784",
         "website": "https://mybusiness1.com",
-        "image": "business1.png",
-        "membershipLevel": 1,
-        "description": "A great local business offering quality services."
-    },
-    {
-        "name": "Business Name 2",
-        "address": "456 Elm St, Bermejillo, Durango",
-        "phone": "800-555-5678",
-        "website": "https://mybusiness2.com",
-        "image": "business2.png",
-        "membershipLevel": 2,
-        "description": "A trusted name in the community for over 20 years."
-    },
-    {
-        "name": "Business Name 3",
-        "address": "789 Oak St, Bermejillo, Durango",
-        "phone": "800-555-9101",
-        "website": "https://mybusiness3.com",
-        "image": "business3.png",
+        "image": "durango-min.jpg",
         "membershipLevel": 3,
-        "description": "Innovative solutions for modern problems."
+        "description": "A great place to rest, with all what you need for your vacations"
     },
     {
-        "name": "Business Name 4",
-        "address": "101 Pine St, Bermejillo, Durango",
-        "phone": "800-555-1122",
-        "website": "https://mybusiness4.com",
-        "image": "business4.png",
-        "membershipLevel": 1,
-        "description": "Your go-to place for all your needs."
-    },
-    {
-        "name": "Business Name 5",
-        "address": "202 Maple St, Bermejillo, Durango",
-        "phone": "800-555-3344",
-        "website": "https://mybusiness5.com",
-        "image": "business5.png",
+        "name": "Hotel Durango Inn",
+        "address": "Carr. Torreon - Jiménez 22, Bermejillo, Durango",
+        "phone": "(872) 106-3313",
+        "website": "https://mybusiness2.com",
+        "image": "durango-inn.jpg",
         "membershipLevel": 2,
-        "description": "Quality products at affordable prices."
+        "description": "Good choice for trucks and people who are travel at night"
     },
     {
-        "name": "Business Name 6",
-        "address": "303 Cedar St, Bermejillo, Durango",
+        "name": "Hotel las Palmas",
+        "address": "S, Seguro Soc. SN, 35230 Bermejillo, Dgo.",
+        "phone": "(834) 131-0722",
+        "website": "https://mybusiness3.com",
+        "image": "palmas.jpg",
+        "membershipLevel": 2,
+        "description": "A good place to stay in big groups"
+    },
+    {
+        "name": "Hotel Bermejillo",
+        "address": "Ferrocarril 59, Bermejillo, Durango",
+        "phone": "(872) 776-0312",
+        "website": "https://mybusiness4.com",
+        "image": "hotel.jpg",
+        "membershipLevel": 1,
+        "description": "A small hotel, a nice place for a quick night."
+    },
+    {
+        "name": "Hotel Maribel",
+        "address": "Carr. Torreon - Jiménez 38, Bermejillo, Durango",
+        "phone": "(872) 109-3253",
+        "website": "https://mybusiness5.com",
+        "image": "maribel.jpg",
+        "membershipLevel": 1,
+        "description": "Economic proces and rooms, a small hotel"
+    },
+    {
+        "name": "Plaza las Palmas",
+        "address": "Mariano Escobedo, Bermejillo, Durango",
         "phone": "800-555-5566",
         "website": "https://mybusiness6.com",
-        "image": "business6.png",
+        "image": "plaza.jpg",
         "membershipLevel": 3,
-        "description": "Leading the way in innovation and service."
+        "description": "A small center of stores to find what you need"
     },
     {
-        "name": "Business Name 7",
-        "address": "404 Birch St, Bermejillo, Durango",
+        "name": "Plaza Guadalupe",
+        "address": "Ferrocarril 7, Bermejillo, Durango",
         "phone": "800-555-7788",
         "website": "https://mybusiness7.com",
-        "image": "business7.png",
+        "image": "park.jpg",
         "membershipLevel": 1,
-        "description": "Committed to excellence in everything we do."
+        "description": "A park to explore and asist to the event of the city."
     }
 ]
