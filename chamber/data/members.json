@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Business Name 1",
+        "address": "123 Main St, Bermejillo, Durango",
+        "phone": "800-555-1234",
+        "website": "https://mybusiness1.com",
+        "image": "business1.png",
+        "membershipLevel": 1,
+        "description": "A great local business offering quality services."
+    },
+    {
+        "name": "Business Name 2",
+        "address": "456 Elm St, Bermejillo, Durango",
+        "phone": "800-555-5678",
+        "website": "https://mybusiness2.com",
+        "image": "business2.png",
+        "membershipLevel": 2,
+        "description": "A trusted name in the community for over 20 years."
+    },
+    {
+        "name": "Business Name 3",
+        "address": "789 Oak St, Bermejillo, Durango",
+        "phone": "800-555-9101",
+        "website": "https://mybusiness3.com",
+        "image": "business3.png",
+        "membershipLevel": 3,
+        "description": "Innovative solutions for modern problems."
+    },
+    {
+        "name": "Business Name 4",
+        "address": "101 Pine St, Bermejillo, Durango",
+        "phone": "800-555-1122",
+        "website": "https://mybusiness4.com",
+        "image": "business4.png",
+        "membershipLevel": 1,
+        "description": "Your go-to place for all your needs."
+    },
+    {
+        "name": "Business Name 5",
+        "address": "202 Maple St, Bermejillo, Durango",
+        "phone": "800-555-3344",
+        "website": "https://mybusiness5.com",
+        "image": "business5.png",
+        "membershipLevel": 2,
+        "description": "Quality products at affordable prices."
+    },
+    {
+        "name": "Business Name 6",
+        "address": "303 Cedar St, Bermejillo, Durango",
+        "phone": "800-555-5566",
+        "website": "https://mybusiness6.com",
+        "image": "business6.png",
+        "membershipLevel": 3,
+        "description": "Leading the way in innovation and service."
+    },
+    {
+        "name": "Business Name 7",
+        "address": "404 Birch St, Bermejillo, Durango",
+        "phone": "800-555-7788",
+        "website": "https://mybusiness7.com",
+        "image": "business7.png",
+        "membershipLevel": 1,
+        "description": "Committed to excellence in everything we do."
+    }
+]
