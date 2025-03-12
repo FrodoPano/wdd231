@@ -1,6 +1,6 @@
 :root {
     --primary-color: #1e4d7c; /* Dark blue for headers and accents */
-    --secondary-color: #3498db; /* Bright blue for links and buttons */
+    --secondary-color: #154c70; /* Bright blue for links and buttons */
     --background-color: #ecf0f1; /* Light gray for background */
     --text-color: #000000; /* Dark blue for text */
     --accent-color: #e67e22; /* Orange for highlights */
@@ -17,13 +17,14 @@ body {
     padding: 0;
 }
 
-h2, h3 {
+h3 {
     color: var(--text-color);
 }
 
 a {
     color: var(--secondary-color);
-    text-decoration: none;
+    text-decoration: underline;
+
 }
 
 a:hover {
