@@ -90,6 +90,11 @@ nav ul li a:hover {
     }
 }
 
+h2{
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+}
+
 /* Hero Section */
 #hero {
     position: relative;
