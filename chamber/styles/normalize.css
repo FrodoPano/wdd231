@@ -3,7 +3,7 @@
     --secondary-color: #154c70; /* Bright blue for links and buttons */
     --background-color: #ecf0f1; /* Light gray for background */
     --text-color: #000000; /* Dark blue for text */
-    --accent-color: #e67e22; /* Orange for highlights */
+    --accent-color: #9e1a00; /* Orange for highlights */
     --white: #ffffff; /* White for contrast */
 }
 
@@ -45,30 +45,33 @@ header {
     align-items: center;
     justify-content: space-between;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .header-left {
     display: flex;
     align-items: center;
-    gap: 1rem; /* Adds space between the logo and h1 */
+    gap: 1rem;
+    flex: 1; /* Adds space between the logo and h1 */
 }
 
 header img {
-    width: 80px; /* Adjust the size as needed */
-    height: 80px; /* Adjust the size as needed */
+    width: 60px; /* Adjust the size as needed */
+    height: 60px; /* Adjust the size as needed */
     border-radius: 50%; /* Makes the image circular */
-    margin-right: 1rem; /* Adds space between the logo and the title */
+    margin-right: 0.5rem; /* Adds space between the logo and the title */
 }
 
 header h1 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 /* Navigation */
 nav {
     background-color: var(--primary-color);
     padding: 0.5rem;
+    width: 100%;
 }
 
 nav ul {
@@ -76,11 +79,12 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 1rem; /* Adds space between navigation items */
+    gap: 0.5rem; /* Adds space between navigation items */
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    margin: 0.5rem;
+    margin: 0.25rem;
 }
 
 nav ul li a {
@@ -88,6 +92,7 @@ nav ul li a {
     padding: 0.5rem 1rem;
     border-radius: 5px;
     transition: background-color 0.3s;
+    font-size: 0.9rem;
 }
 
 nav ul li a:hover {
@@ -155,5 +160,24 @@ footer p {
 @media (max-width: 480px) {
     header h1 {
         font-size: 1rem;
+    }
+
+    header img {
+        width: 50px; /* Further reduce logo size for very small screens */
+        height: 50px;
+    }
+
+    nav ul li a {
+        padding: 0.4rem; /* Further reduce padding for very small screens */
+        font-size: 0.8rem; /* Further reduce font size for very small screens */
+    }
+
+    .business-card {
+        padding: 0.25rem; /* Further reduce padding for very small screens */
+    }
+
+    button {
+        padding: 6px 10px; /* Further reduce padding for very small screens */
+        font-size: 0.8rem; /* Further reduce font size for very small screens */
     }
 }

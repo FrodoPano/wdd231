@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Chamber of Commerce Home</title>
+    <meta name="description" content="Home page for the chamber of commerce, featuring local events, weather, and business spotlights.">
+    <meta name="author" content="Frodo Pano">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/location.js" defer></script>
+    <!--Facebook og-->
+    <meta property="og:title" content="Searching for a place to stay in Bermejillo?">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://frodopano.github.io/wdd231/chamber/images/durango-min.jpg">
+    <meta property="og:url" content="https://frodopano.github.io/wdd231/chamber/index.html">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/logo.jpg" alt="Bermejillo Chamber of Commerce Logo">
+            <h2>Bermejillo Chamber of Commerce</h2>
+        </div>
+        <nav>
+            <div class="menu-icon">&#9776;</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <img src="images/bermejillo.webp" alt="Bermejillo City View">
+            <button class="cta">Join the Chamber</button>
+            
+        </section>
+
+        <section id="current-events">
+            <h2>Current Events</h2>
+            <div class="event">
+                <h3>Local Business Fair</h3>
+                <p>Join us for the annual business fair on May 15th.</p>
+            </div>
+            <div class="event">
+                <h3>Networking Night</h3>
+                <p>Meet local entrepreneurs on May 20th.</p>
+            </div>
+        </section>
+
+        <section id="weather">
+            <h2>Current Weather</h2>
+            <div id="weather-info">
+                <p><span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption id="weather-desc"></figcaption>
+                </figure>
+            </div>
+            <div id="weather-forecast">
+                <h3>3-Day Forecast</h3>
+                <!-- Forecast will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <section id="spotlights">
+            <h2>Business Spotlights</h2>
+            <div id="spotlight-cards">
+                <!-- Spotlight cards will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Bermejillo Chamber of Commerce</p>
+        <p>Insurgentes 18, Bermejillo, Durango, México</p>
+        <p>hotel.durango.express@gmail.com | (871) 357-9784</p>
+        <p>&copy; <span id="copyright-year"></span> Bermejillo Chamber of Commerce</p>
+        <p>Frodo Pano | WDD 231</p>
+        <p>Last Update: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
