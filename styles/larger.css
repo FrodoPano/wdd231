@@ -6,11 +6,11 @@
         background-color: #014371;
     }
 
-    #menu-toggle{
+    #menu-toggle {
         display: none;
     }
 
-    nav ul{
+    nav ul {
         list-style: none;
         display: flex;
         gap: 10px; /* Spacing between links */
@@ -25,7 +25,7 @@
         padding: 8px 12px;
         border-right: 1px solid white; /* Add vertical separator between links */
     }
-    
+
     nav ul li:last-child {
         border-right: none; /* Remove separator for the last link */
     }
@@ -36,14 +36,15 @@
         font-size: 16px;
         transition: color 0.3s ease;
     }
-    
+
     nav ul li a:hover {
         background-color: #005fa3; /* Darker blue on hover */
     }
-    
+
     nav ul li a.active {
         background-color: #136217; /* Green for active link */
     }
+
     main {
         max-width: 800px;
         margin: auto;
@@ -55,20 +56,20 @@
         align-items: center;
         gap: 20px;
     }
-    
+
     #filter-buttons {
         display: flex;
         gap: 10px;
         margin-bottom: 20px;
     }
-    
+
     #course-list {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
         justify-content: center;
     }
-    
+
     .course-button {
         background-color: #014371;
         color: white;
@@ -76,12 +77,67 @@
         padding: 10px 20px;
         border-radius: 5px;
         cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    
+
+    .course-button:hover {
+        transform: scale(1.05); /* Slightly enlarge the button */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    }
+
     .course-button.completed {
         background-color: #4caf50; /* Green for completed courses */
     }
 
-    
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .course-button.completed {
+        animation: pulse 1.5s infinite; /* Apply the pulse animation */
+    }
+
 }
 
+/* Modal styles */
+dialog {
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0 / 0.5);
+}
+
+dialog button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    background-color: #ff4444;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+dialog button:hover {
+    background-color: #cc0000;
+}

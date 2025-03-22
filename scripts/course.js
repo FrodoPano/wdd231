@@ -4,48 +4,67 @@ const courses = [
         number: 110,
         title: 'Introduction to Programming',
         credits: 2,
-        completed: false
+        completed: false,
+        description: 'This course introduces the basics of programming using Python.',
+        certificate: 'Programming Basics',
+        technology: ['Python', 'VS Code']
     },
     {
         subject: 'WDD',
         number: 130,
         title: 'Web Fundamentals',
         credits: 2,
-        completed: false
+        completed: false,
+        description: 'Learn the fundamentals of web development including HTML, CSS, and JavaScript.',
+        certificate: 'Web Development Basics',
+        technology: ['HTML', 'CSS', 'JavaScript']
     },
     {
         subject: 'CSE',
         number: 111,
         title: 'Programming with Functions',
         credits: 2,
-        completed: false
+        completed: false,
+        description: 'This course dives deeper into programming concepts using functions in Python.',
+        certificate: 'Intermediate Programming',
+        technology: ['Python', 'VS Code']
     },
     {
         subject: 'CSE',
         number: 210,
         title: 'Programming with Classes',
         credits: 2,
-        completed: false
+        completed: false,
+        description: 'Learn object-oriented programming using classes in Python.',
+        certificate: 'Advanced Programming',
+        technology: ['Python', 'VS Code']
     },
     {
         subject: 'WDD',
         number: 131,
         title: 'Dynamic Web Fundamentals',
         credits: 2,
-        completed: false
+        completed: false,
+        description: 'Explore dynamic web development using JavaScript and APIs.',
+        certificate: 'Dynamic Web Development',
+        technology: ['JavaScript', 'APIs']
     },
     {
         subject: 'WDD',
         number: 231,
         title: 'Frontend Web Development I',
         credits: 2,
-        completed: false
+        completed: false,
+        description: 'Learn frontend development with a focus on modern frameworks.',
+        certificate: 'Frontend Development',
+        technology: ['React', 'JavaScript']
     }
 ];
 
 const courseList = document.getElementById('course-list');
 const totalCredits = document.getElementById('total-credits');
 const filterButtons = document.getElementById('filter-buttons');
+const courseDetails = document.getElementById('course-details');
 
 let displayedCourses = courses;
 
@@ -60,11 +79,9 @@ function displayCourses(filteredCourses) {
 
         button.textContent = `${course.subject} ${course.number}`;
 
-        // Add click event to toggle selection
+        // Add click event to show course details
         button.addEventListener('click', () => {
-            course.completed = !course.completed; // Toggle completed status
-            button.classList.toggle('completed'); // Toggle completed style
-            updateTotalCredits(filteredCourses); // Update total credits
+            displayCourseDetails(course);
         });
 
         courseList.appendChild(button);
@@ -74,12 +91,29 @@ function displayCourses(filteredCourses) {
     totalCredits.textContent = credits; // Update total credits
 }
 
-function updateTotalCredits(filteredCourses) {
-    let credits = 0;
-    filteredCourses.forEach(course => {
-        if (course.completed) credits += course.credits;
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+
+    const closeModal = document.getElementById('closeModal');
+    closeModal.addEventListener('click', () => {
+        courseDetails.close();
     });
-    totalCredits.textContent = credits;
+
+    // Close modal when clicking outside of it
+    courseDetails.addEventListener('click', (e) => {
+        if (e.target === courseDetails) {
+            courseDetails.close();
+        }
+    });
 }
 
 filterButtons.addEventListener('click', (e) => {
