@@ -24,11 +24,11 @@ document.getElementById('timestamp').value = new Date().toISOString();
 const cards = document.querySelectorAll('.card');
 cards.forEach(card => {
   card.addEventListener('click', () => {
-    const level = card.getAttribute('data-level');
+    const level = card.getAttribute('data-level').toLowerCase(); // Ensure lowercase
     const modal = document.getElementById(`${level}-details`);
     modal.showModal();
 
-    const closeButton = document.getElementById(`close${level}`);
+    const closeButton = document.getElementById(`close-${level}`);
     closeButton.addEventListener('click', () => {
       modal.close();
     });

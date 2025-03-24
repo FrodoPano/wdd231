@@ -62,7 +62,7 @@
           <label><input type="radio" name="ordinance" value="Gold"> Gold Membership</label>
     
           <!-- Business/Organization Description -->
-          <label>Business Description <textarea name="description" title="Your Business Description"></textarea></label>
+          <label>Business Description <input type="text" name="description" required autocomplete="organization" title="Your Business description"></label>
     
           <!-- Hidden Timestamp -->
           <label>Date <input type="date" name="date" required></label>
@@ -74,47 +74,47 @@
     
         <!-- Membership Level Cards -->
         <section id="membership-cards">
-          <div class="card" data-level="NP">
+          <div class="card" data-level="np">
             <h3>NP Membership</h3>
             <p>Non-Profit Organizations</p>
-            <a href="#NP-details">Learn More</a>
+            <a href="#np-details">Learn More</a>
           </div>
-          <div class="card" data-level="Bronze">
+          <div class="card" data-level="bronze">
             <h3>Bronze Membership</h3>
             <p>Basic Benefits</p>
-            <a href="#Bronze-details">Learn More</a>
+            <a href="#bronze-details">Learn More</a>
           </div>
-          <div class="card" data-level="Silver">
+          <div class="card" data-level="silver">
             <h3>Silver Membership</h3>
             <p>Enhanced Benefits</p>
-            <a href="#Silver-details">Learn More</a>
+            <a href="#silver-details">Learn More</a>
           </div>
-          <div class="card" data-level="Gold">
+          <div class="card" data-level="gold">
             <h3>Gold Membership</h3>
             <p>Premium Benefits</p>
-            <a href="#Gold-details">Learn More</a>
+            <a href="#gold-details">Learn More</a>
           </div>
         </section>
     
         <!-- Membership Level Modals -->
-        <dialog id="NP-details">
-          <button id="closeNP">❌</button>
+        <dialog id="np-details">
+          <button id="close-np">❌</button>
           <h2>NP Membership</h2>
           <p>No fee for non-profit organizations.</p>
           <p>Benefits include access to networking events and basic training.</p>
         </dialog>
-        <dialog id="Bronze-details">
-          <button id="closeBronze">❌</button>
+        <dialog id="bronze-details">
+          <button id="close-bronze">❌</button>
           <h2>Bronze Membership</h2>
           <p>Basic membership with access to training and events.</p>
         </dialog>
-        <dialog id="Silver-details">
-          <button id="closeSilver">❌</button>
+        <dialog id="silver-details">
+          <button id="close-silver">❌</button>
           <h2>Silver Membership</h2>
           <p>Enhanced benefits including advertising opportunities.</p>
         </dialog>
-        <dialog id="Gold-details">
-          <button id="closeGold">❌</button>
+        <dialog id="gold-details">
+          <button id="close-gold">❌</button>
           <h2>Gold Membership</h2>
           <p>Premium benefits including spotlight positions and event discounts.</p>
         </dialog>
