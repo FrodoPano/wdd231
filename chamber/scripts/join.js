@@ -40,6 +40,7 @@ const myInfo = new URLSearchParams(window.location.search);
 
 console.log(myInfo.get('first'));
 console.log(myInfo.get('last'));
+console.log(myInfo.get('title')); 
 console.log(myInfo.get('email'));
 console.log(myInfo.get('phone'));
 console.log(myInfo.get('ordinance'));
@@ -47,11 +48,13 @@ console.log(myInfo.get('business'));
 console.log(myInfo.get('date'));
 
 
+
 document.querySelector('#results').innerHTML= `
     <div class="thankyou-card">
       <h2>Thank You for Joining!</h2>
       <p><strong>First Name:</strong> ${myInfo.get('first')}</p>
       <p><strong>Last Name:</strong> ${myInfo.get('last')}</p>
+      <p><strong>Organizational Title:</strong> ${myInfo.get('title')}</p>
       <p><strong>Email:</strong> ${myInfo.get('email')}</p>
       <p><p><strong>Mobile Phone:</strong> ${myInfo.get('phone')}</p>
       <p><strong>Membership:</strong> ${myInfo.get('ordinance')}</p>
