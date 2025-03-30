@@ -10,12 +10,21 @@
 
 /* Base Styles (Mobile First) */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
     margin: 0;
     padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* For buttons and other elements where you might want Roboto */
+button, input, select, textarea {
+    font-family: 'Roboto', sans-serif;
 }
 
 .discover-main {
