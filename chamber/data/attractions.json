@@ -1,0 +1,58 @@
+[
+    {
+      "id": 1,
+      "name": "Bermejillo Entrance",
+      "address": "Mexico 49, Bermejillo, Durango",
+      "description": "A turistic place to start to see the city",
+      "image": "images/bermejillo-entrance.webp"
+    },
+    {
+      "id": 2,
+      "name": "Bermejillo Parl",
+      "address": "Mexico 49, Bermejillo, Durango",
+      "description": "A good place to play with kids and enjoy the day.",
+      "image": "images/bermejillo-park.webp"
+    },
+    {
+      "id": 3,
+      "name": "Culture House",
+      "address": "Nte. Independencia, Bermejillo, Dgo.",
+      "description": "A culture place to know more about the city and the history of the town.",
+      "image": "images/culture-house.webp"
+    },
+    {
+      "id": 4,
+      "name": "Plaza las Palmas",
+      "address": "Mariano Escobedo, Bermejillo, Durango",
+      "description": "Local shopping center featuring various stores.",
+      "image": "images/plaza-palmas.webp"
+    },
+    {
+      "id": 5,
+      "name": "Bermejillo Hospital",
+      "address": "15 Agustin de Iturbide, Bermejillo, Durango",
+      "description": "The hospital of the town, it's good to know where it is.",
+      "image": "images/hospital.webp"
+    },
+    {
+      "id": 6,
+      "name": "Jimenez Field",
+      "address": "215 Jimenez-Torreon, Bermejillo",
+      "description": "A small place to play sports in the town",
+      "image": "images/jimenez-field.webp"
+    },
+    {
+      "id": 7,
+      "name": "Morelos Park",
+      "address": "7 Morelos, Bermejillo, Durango",
+      "description": "A park in the center of the town with trees and places to rest.",
+      "image": "images/morelos-park.webp"
+    },
+    {
+      "id": 8,
+      "name": "Guadalupe Park",
+      "address": "3 Jimenez-Torreon, Centro, Bermejillo",
+      "description": "A small park in the city, is a place where the people visit often.",
+      "image": "images/guadalupe-park.webp"
+    }
+]

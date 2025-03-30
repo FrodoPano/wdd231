@@ -1,0 +1,156 @@
+:root {
+    --primary-color: #1e4d7c;
+    --secondary-color: #154c70;
+    --background-color: #ecf0f1;
+    --text-color: #000000;
+    --accent-color: #9e1a00;
+    --white: #ffffff;
+    --card-bg: #ffffff;
+}
+
+/* Base Styles (Mobile First) */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.discover-main {
+    display: grid;
+    grid-template-areas:
+        "sidebar"
+        "attractions";
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: var(--card-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.attractions-grid {
+    grid-area: attractions;
+}
+
+.attractions-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.attraction-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.attraction-card figure {
+    margin: 0;
+    padding: 0;
+}
+
+.attraction-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.attraction-card h2 {
+    margin: 0.5rem 1rem;
+    color: var(--primary-color);
+}
+
+.attraction-card address {
+    margin: 0.5rem 1rem;
+    font-style: normal;
+    color: var(--secondary-color);
+}
+
+.attraction-card p {
+    margin: 0.5rem 1rem 1rem;
+}
+
+.attraction-card button {
+    display: block;
+    margin: 0 auto 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.visit-message {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.demographics {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* Medium Screens (641px-1024px) */
+@media (min-width: 641px) {
+    .discover-main {
+        grid-template-areas:
+            "attractions attractions sidebar";
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .attractions-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .attraction-card img {
+        height: 180px;
+    }
+
+    .attraction-card:hover {
+        transform: translateY(-5px);
+    }
+}
+
+/* Large Screens (1025px+) */
+@media (min-width: 1025px) {
+    .discover-main {
+        grid-template-areas:
+            "sidebar attractions attractions attractions";
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .attractions-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .attraction-card img {
+        height: 200px;
+        transition: transform 0.3s ease;
+    }
+
+    .attraction-card:hover img {
+        transform: scale(1.05);
+    }
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 640px) {
+    .attraction-card:hover {
+        transform: none;
+    }
+}
