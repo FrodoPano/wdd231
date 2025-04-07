@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Information</title>
+    <meta name="description" content="WDD 131 Weather Information - Current Conditions">
+    <meta name="author" content="Frodo Pano">
+    <link rel="icon" href="images/watch.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/weather.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="scripts/weather.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/watch.png" alt="Time Zone Logo" class="logo">
+            <div class="header-main">
+                <div class="header-title-nav">
+                    <h1>Weather Information</h1>
+                    <button class="hamburger-btn" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="timezone.html">Home</a></li>
+                            <li><a href="map.html">Map</a></li>
+                            <li><a href="weather.html">Weather</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="weather-container">
+            <div class="search-container">
+                <input type="text" id="location-input" placeholder="Enter city name">
+                <button id="search-weather"><i class="fas fa-search"></i> Search</button>
+            </div>
+            
+            <div class="current-weather">
+                <div class="weather-card">
+                    <h2>Current Weather</h2>
+                    <div class="weather-info">
+                        <div class="weather-main">
+                            <div class="temperature">
+                                <span id="current-temp">--</span>
+                                <span class="unit-toggle">
+                                    <span class="unit active" data-unit="c">°C</span>
+                                    <span class="unit" data-unit="f">°F</span>
+                                </span>
+                            </div>
+                            <div id="weather-icon"></div>
+                        </div>
+                        <div class="weather-details">
+                            <p><i class="fas fa-map-marker-alt"></i> <span id="location">--</span></p>
+                            <p><i class="fas fa-cloud"></i> <span id="conditions">--</span></p>
+                            <p><i class="fas fa-tint"></i> Humidity: <span id="humidity">--</span>%</p>
+                            <p><i class="fas fa-wind"></i> Wind: <span id="wind-speed">--</span> km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="forecast">
+                <h2>3-Day Forecast</h2>
+                <div class="forecast-cards" id="forecast-cards">
+                    <!-- Forecast cards will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Weather Information</p>
+        <p>&copy;<span id="copyright-year"></span> 🐼 Frodo Pano 🐼 México</p>
+        <p>Last Update: <span id="last-modified" class="highlight"></span></p>
+    </footer>
+</body>
+</html>
