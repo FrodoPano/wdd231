@@ -5,9 +5,7 @@
     --accent-color: #9e1a00;
 }
 
-.fa, .fa-brands, .fa-duotone, .fa-light, .fa-regular, .fa-solid, .fa-thin, .fab, .fad, .fal, .far, .fas, .fat{
-    text-rendering: auto;
-}
+
 
 body {
     margin: 0;
@@ -112,7 +110,7 @@ body {
     opacity: 0;
     transition: opacity 0.3s ease;
     z-index: 10;
-    pointer-events: none;
+    
 }
 
 /* ===== Footer ===== */
